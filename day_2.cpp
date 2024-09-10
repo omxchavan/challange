@@ -1,4 +1,4 @@
-// fond the same problem on leet code hence solved it there and same is the solution
+// found the same problem on leet code hence solved it there and same is the solution
 
 class Solution {
 public:
