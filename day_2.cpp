@@ -5,9 +5,9 @@ public:
     int missingNumber(vector<int>& nums) {
         int a=nums.size();
         sort(nums.begin(),nums.end());
-        for(int i=1;i<nums.size();i++){
+        for(int i=0;i<nums.size();i++){
             if (nums[i]!=i){
-                a=i;
+                return i;
             }
             
         }
