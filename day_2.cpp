@@ -1,4 +1,5 @@
-// found the same problem on leet code hence solved it there and same is the solution
+// fond the same problem on leet code hence solved it there and same is the solution
+
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
@@ -6,7 +7,7 @@ public:
         sort(nums.begin(),nums.end());
         for(int i=0;i<nums.size();i++){
             if (nums[i]!=i){
-                a=i;
+                return i;
             }
             
         }
