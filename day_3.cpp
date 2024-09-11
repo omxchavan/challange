@@ -2,15 +2,16 @@
 
 class Solution {
 public:
-    int missingNumber(vector<int>& nums) {
+    int findDuplicate(vector<int>& nums) {
         sort(nums.begin(),nums.end());
-        for(int i=0;i<nums.size();i++){
-            if (nums[i]!=i){
-                return i;
-            }
-            
+            for (int j=0;j<nums.size();j++)
+            {
+                if (j==nums[j]){
+                    return j;
+                }
         }
-       return nums.size();
+        
+        return 0;
+
     }
-     
 };
